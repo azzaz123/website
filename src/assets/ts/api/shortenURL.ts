@@ -12,7 +12,7 @@ export default async (url: string): Promise<string> => {
   if (response.ok) {
     const json: { short: string } = await response.json();
 
-    return `https://zws.im/${json.short}`;
+    return `https://serene-vacherin-4e8413.netlify.app/${json.short}`;
   } else {
     const json = await response.json();
 
